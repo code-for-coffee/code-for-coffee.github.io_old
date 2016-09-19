@@ -1,87 +1,55 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Shopping Cart</title>
-  </head>
-  <script type="text/javascript">
-  var itemsToBeReviewed = [];
-  var itemsToBeReviewedLocation = [];
-  /**
-   * @params product: string representing product name
-   * @params location: integer representing product location in array
-   */
-  function reportInvalidItem(product, location) {
-    //sendMail('boss', 'boss@newco.nu', product);
-    itemsToBeReviewed.push(product);
-    itemsToBeReviewedLocation.push(location);
-  };
+<html lang="en">
+    <head>
+        <title>James' Leet Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/app.js"></script>
 
-  var prices = [
-    3.14,
-    69.99,
-    "meow"
-  ];
-  var totalPrice = 0;
+    </head>
+    <body>
+        <h1>Photo to go here</h1>
+        <h2>My special tagline/branding quote</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+        </nav>
 
-  var products = [
-    "Apple Pie",
-    "Auto Cat Feeder",
-    70.89
-  ];
+        <section>
+            <article>
+                <h3>Project Title</h3>
+                <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+            </article>
 
-  console.log('Shopping Cart App');
-  console.log('-----------------');
-  console.log('We have found the following items in your cart:');
-  console.log(prices);
-  console.log(products);
-  console.log('-----------------');
+            <article>
+                <h3>Project Title</h3>
+                <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+            </article>
 
-  // one method... .isArray
-  // console.log(Array.isArray(prices));
+            <article>
+                <h3>Project Title</h3>
+                <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+            </article>
 
-  // loop through all the things
-  prices.forEach(function(item) {
+            <article>
+                <h3>Project Title</h3>
+                <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                    </p>
+            </article>
 
-    if (typeof item == 'number') {
-      totalPrice = totalPrice + item;
-    } else {
-      //throw new Error("Whoops, someone entered NaN");
-      // console.log(item);
-      // console.log('has bad datazzzzzz');
-      reportInvalidItem(item, prices.indexOf(item));
-    }
-    //console.log(item);
-  });
+            <article>
+                <h3>Project Title</h3>
+                <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.
+                </p>
+            </article>
+        </section>
 
-  console.log('-----------------');
-  console.log('Your total price is:')
-  console.log('-----------------');
-
-  console.log('$' + totalPrice);
-
-  console.log('-----------------');
-  console.log('We have found invalid items in your cart.');
-  console.log('They have been removed and your total does not reflect their price.');
-  console.log('-----------------');
-
-  console.log(itemsToBeReviewed);
-  console.log(itemsToBeReviewedLocation);
-
-
-  console.log('-----------------');
-  console.log('Thanks for using Phamazon! :) :) :)');
-  console.log('-----------------');
-  </script>
-  <body>
-    My first shopping cart experience.
-    <section>
-      <article>
-        <h3>My article title</h3>
-        <p>
-          Lorem ipsum my code is here.
-        </p>
-      </article>
-    </section>
-  </body>
+        <footer>
+            &copy; 2016 myself.
+        </footer>
+    </body>
 </html>
